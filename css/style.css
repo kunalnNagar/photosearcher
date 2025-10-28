@@ -1,0 +1,57 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.api-header{
+    width: 400px;
+    margin: auto;
+}
+.api-header input{
+    width: 94%;
+    height: 35px;
+    /* border: none;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7); */
+    margin: 10px 0;
+    padding: 0 10px;
+}
+.api-header button{
+    width: 100%;
+    padding: 10px; 
+    background-color: rgb(0, 128, 255);
+    color: white;
+    /* border: none/; */
+}
+.photos{
+    margin: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px 10px;
+}
+.photos img{
+    width: 24%;
+    height: auto;
+    transition: 0.5s;
+    border-radius: 20px;
+}
+.photos img:hover{
+    scale: 1.05;
+}
+
+@media (max-width:800px) {
+    .photos img {
+    width: 48%;
+}
+    
+}
+@media (max-width:528px) {
+    .photos img {
+    width: 98%;
+}
+.api-header {
+    width: 92%;
+    margin: 15px;
+}
+    
+}
