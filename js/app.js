@@ -24,6 +24,7 @@ async function search(){
       photo.appendChild(img);
       
     })
+    input.value = "";
   }
   catch (error){
     console.log(error);
@@ -43,3 +44,7 @@ btn.addEventListener( "click", (ev)=>{
   }
 })
 
+setTimeout( ()=>{
+  input.value = "india";
+  search();
+},1000)
